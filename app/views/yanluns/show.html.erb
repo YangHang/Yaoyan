@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @yanlun.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @yanlun.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_yanlun_path(@yanlun) %> |
+<%= link_to 'Back', yanluns_path %>

@@ -1,0 +1,59 @@
+<div class="row">
+	<div class="large-6 columns sub">
+		
+		<h1 class = "subtitle">谣言</h1>
+			
+
+			<% @yanluns.each do |yanlun| %>
+	   <p>
+	   	    <%= yanlun.title %>
+	   </p>
+		 <p>
+		 	
+	    <%= yanlun.content %>
+			
+		 </p> 
+			 
+			   <%= link_to 'Edit', edit_yanlun_path(yanlun) %>
+			    <%= link_to 'Destroy', yanlun, method: :delete, data: { confirm: 'Are you sure?' } %>
+			  </tr>
+			<% end %>
+
+			<br />
+
+			<%= link_to '提交言论', new_yanlun_path,class: " small button alert" %>
+			
+	</div>
+	
+	
+	<div class="large-6 columns sub">
+		<h1 class = "subtitle">传闻</h1>
+		
+
+		<% @yanluns.each do |yanlun| %>
+		   <p>
+		   	    <%= yanlun.title %>
+		   </p>
+			 <p>
+			 	
+		    <%= yanlun.content %>
+				
+			 </p> 
+		    <%= link_to 'Show', yanlun %>
+		    <%= link_to 'Edit', edit_yanlun_path(yanlun) %>
+		    <%= link_to 'Destroy', yanlun, method: :delete, data: { confirm: 'Are you sure?' } %>
+		  
+		<% end %>
+	
+
+		<br />
+
+		<%= link_to '你怎么看', new_yanlun_path,class: "button small" %>
+	</div>
+
+	
+
+
+
+
+
