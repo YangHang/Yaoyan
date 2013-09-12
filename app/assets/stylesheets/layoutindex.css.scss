@@ -1,3 +1,8 @@
+@import "foundation/variables";
+@import "foundation/components/global";
+@import "foundation/components/panels";
+@import "foundation/components/alert-boxes";
+@import "foundation/components/labels";
 #slider{
 	text-align:center;
 
@@ -11,5 +16,42 @@
 }
 
 .sub{
-	text-align:center;
+	text-align:center	;
+}
+
+label{
+text-align:left;	
+padding-bottom:10px;
+}
+.submit{
+	margin-top:10px;
+float:right;
+}
+
+.errors{
+	
+	@include label;
+	text-align:left;
+	font-weight: bold;
+	
+	text-decoration: none;
+	line-height: 1;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	
+	font-size: 11px;
+	background-color: pink;
+	color: #333333;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+
+
+.error-ul{
+	padding-top:10px;
+	list-style:none;
+	text-align:left;
 }

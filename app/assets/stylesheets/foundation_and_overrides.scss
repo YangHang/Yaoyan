@@ -782,7 +782,7 @@ $default-float: left;
 // We use these to style the labels
 
 // $label-padding: emCalc(3, 10, 4);
-// $label-radius: $global-radius;
+ // $label-radius: $global-radius;
 
 // We use these to style the label text
 
@@ -1301,3 +1301,11 @@ $default-float: left;
 // $topbar-sticky-class: ".sticky";
 
 @import 'foundation';
+
+
+
+@import "foundation/variables";
+@import "foundation/components/global";
+@import "foundation/components/panels";
+@import "foundation/components/alert-boxes";
+@import "foundation/components/labels";

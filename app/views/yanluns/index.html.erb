@@ -1,3 +1,15 @@
+		<div class="row">
+		<div class="large-12 columns">
+		<div id="slider">
+			<h1>抵制谣言需要你我的参与</h1>
+				<h3 class="subheader">抵制谣言，人人有责</h3>
+			<%= link_to "加入我们", new_user_path, class: "button success" %>
+			<!-- <img src="http://placehold.it/1000x400&text=[ img 1 ]" /> -->
+			
+		</div>		
+		</div>
+    <hr />
+</div>
 <div class="row">
 	<div class="large-6 columns sub">
 		
@@ -11,7 +23,6 @@
 		 <p>
 		 	
 	    <%= yanlun.content %>
-			
 		 </p> 
 			 
 			   <%= link_to 'Edit', edit_yanlun_path(yanlun) %>
@@ -37,7 +48,7 @@
 			 <p>
 			 	
 		    <%= yanlun.content %>
-				
+			  	
 			 </p> 
 		    <%= link_to 'Show', yanlun %>
 		    <%= link_to 'Edit', edit_yanlun_path(yanlun) %>

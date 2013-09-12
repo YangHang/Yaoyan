@@ -1,0 +1,39 @@
+<div class="head">
+	<h1>注册</h1>	
+	<%= render 'shared/error_messages' %>
+	<%= form_for(@user) do |f| %>
+	<div class="row">
+			<div class="large-6 columns large-centered">
+				<%= f.label :name %>
+				<%= f.text_field :name %>
+				</div>
+	</div>			
+	<div class="row">
+			<div class="large-6 columns large-centered">
+				<%= f.label :email %>
+				<%= f.text_field :email %>
+				</div>
+	</div>			
+		<div class="row">
+			<div class="large-6 columns large-centered">
+				<%= f.label :password %>
+				<%= f.password_field :password %>
+			</div>
+		</div>			
+		<div class="row">
+			<div class="large-6 columns large-centered">
+				<%= f.label :password_confirmation %>
+				<%= f.password_field :password_confirmation %>
+			</div>
+		</div>			
+		<div class="row ">
+			<div class="large-6 columns large-centered">
+				<%= f.submit "创建用户", class:  "button submit" %>
+			</div>
+		</div>
+	<% end %>			
+</div>
+
+
+	
+
