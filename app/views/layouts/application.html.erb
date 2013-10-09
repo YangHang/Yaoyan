@@ -22,7 +22,9 @@
 
   <body>
 		<%= render 'layouts/head' %>
-	
+		<% flash.each do |key, value| %>
+		<div class="alert-box <%= key %> round"><%= value %></div>
+		<% end %>
 	
 		<%= yield %>
     
